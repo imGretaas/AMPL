@@ -1,0 +1,21 @@
+#file dei dati
+
+set T := M S; #risorse : chiamate al mattino, chiamate alla sera
+set P := ds dns us uns; #domande : tipo di persone da contattare
+
+param C :=
+M 1.1
+S 1.6
+; #costi
+
+param D :=
+ds   150
+dns  110
+us   120
+uns  100
+; #q.ta richieste
+
+param A : ds  dns us  uns := 
+M         0.3 0.1 0.1 0.1
+S	      0.3 0.2 0.3 0.15
+; #coperture unitarie

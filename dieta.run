@@ -1,0 +1,7 @@
+reset;
+model cover.mod;
+data cover.dieta.dat;
+option solver cplex;
+solve;
+display costi;
+display x;

@@ -1,0 +1,6 @@
+reset;
+model mixopt.mod;
+data mixoptTel.dat;
+solve;
+
+display x;

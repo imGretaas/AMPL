@@ -1,0 +1,38 @@
+#insiemi
+set Prodotti := 
+	lattuga 
+	patate
+;
+
+set Risorse := 
+	ettari 
+	tuberi 
+	semi 
+	concime
+;
+
+#con param, dichiaro i parametri
+
+#Ampl non fa distinzione nell'ordine, 3000 da solo potrebbe riferirsi a qualsiasi cosa
+param P := #nome elemento e valore . Dipende da prodotti
+	lattuga 3000 
+	patate  5000
+; 
+
+param Q := #nome delle risorse con i rispettivi valori
+	ettari   11
+	semi     70
+	tuberi   18
+	concime 145
+;
+
+param A :=
+	lattuga ettari   1
+	lattuga semi     7
+	lattuga tuberi   0
+	lattuga concime 10	
+	patate ettari    1
+	patate semi      0
+	patate tuberi    3
+	patate concime  20
+;

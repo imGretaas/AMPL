@@ -1,0 +1,8 @@
+reset;
+
+model cover.tel.mod;
+data cover.tel.dat;
+option solver cplex;
+solve;
+display costi;
+display x;
