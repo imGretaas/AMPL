@@ -1,0 +1,7 @@
+reset;
+option solver cplex;
+model contadino.mod;
+solve;
+display xL;
+display xP;
+display resa;
